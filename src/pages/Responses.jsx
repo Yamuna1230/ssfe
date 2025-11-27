@@ -14,7 +14,7 @@ function ResponsePage() {
   useEffect(() => {
     const fetchHelpRequests = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/help/all");
+        const response = await fetch("http://localhost:30091/api/help/all");
         if (response.ok) {
           const requests = await response.json();
           setAllRequests(requests);

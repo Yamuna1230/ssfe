@@ -17,7 +17,7 @@ function ContactUs() {
     e.preventDefault();
 
     // Send data to backend API
-    fetch("http://localhost:8080/api/contact", {
+    fetch("http://localhost:30091/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
