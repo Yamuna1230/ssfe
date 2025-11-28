@@ -37,7 +37,7 @@ function RequestHelp() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:30091/api/help/request", {
+      const response = await fetch("http://localhost:5000/api/help/request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
